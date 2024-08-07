@@ -1,3 +1,6 @@
 import { museWork } from "./museWork";
+import { categories, categoryT } from "./category";
 
-export { museWork }
+
+export type { categoryT }
+export { museWork, categories }

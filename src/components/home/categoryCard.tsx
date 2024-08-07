@@ -14,16 +14,16 @@ import { categoryT } from "@/data/category";
 
 export default function CategoryCards({
   _id,
-  category,
+  name,
   subcategory,
   total,
 }: categoryT) {
   return (
-    <Card key={_id} className="h-full  shadow-lg hover:shadow-lg">
+    <Card key={_id} className="h-full">
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
           <p className="text-center text-2xl font-semibold text-primary">
-            {category}
+            {name}
           </p>
           <div className="bg-gray-100 w-14 h-14 rounded-2xl flex justify-center items-center">
             <FaLaptopCode size={35} color="black" />
