@@ -19,7 +19,7 @@ export default function CategoryCards({
   total,
 }: categoryT) {
   return (
-    <Card key={_id} className="h-full  shadow-lg hover:shadow-lg">
+    <Card key={_id} className="h-full">
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
           <p className="text-center text-2xl font-semibold text-primary">
