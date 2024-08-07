@@ -16,7 +16,7 @@ export default function CarouselComponent() {
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 px-5">
             <CategoryCards
               _id={category._id}
-              category={category.name}
+              name={category.name}
               subcategory={category.subcategory}
               total={category.total}
             />
