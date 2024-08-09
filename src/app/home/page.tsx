@@ -7,6 +7,8 @@ import MuseWorkCard from "@/components/home/museWorkCard";
 import CarouselComponent from "@/components/home/carousel";
 import Faqs from "@/components/home/faqs";
 import Mentors from "@/components/home/mentors";
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <section>
@@ -46,8 +48,17 @@ export default function HomePage() {
         <p className="text-4xl font-semibold py-5">How Muse Works</p>
         <MuseWorkCard />
       </section>
+
       <section className="py-3 ">
-        <p className="text-4xl font-semibold py-5 ">Find a mentor</p>
+        <div className="flex justify-between items-center">
+          <p className="text-4xl font-semibold py-5 ">Find a mentor</p>
+          <Link
+            className="text-primary font-semibold text-xl hover:underline"
+            href={"#"}
+          >
+            View All
+          </Link>
+        </div>
         <Mentors />
       </section>
       <section className="py-3">
